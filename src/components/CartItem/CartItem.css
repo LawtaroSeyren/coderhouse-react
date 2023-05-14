@@ -1,0 +1,20 @@
+.cartLink{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.cartItemImage{
+    width: 15%;
+}
+
+.cartItemCard{
+    border: solid 1px;
+    margin: 1rem;
+    transition: all 0.5s
+}
+
+.cartItemCard:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

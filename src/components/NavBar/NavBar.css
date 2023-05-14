@@ -1,0 +1,12 @@
+.logoIronClad {
+    width: 17rem;
+    margin: 1rem;
+}
+
+.nav-link {
+    color: #aaaaaa;
+}
+
+.nav-link:hover {
+    color: #c58518;
+}

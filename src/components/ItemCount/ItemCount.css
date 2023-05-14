@@ -1,0 +1,51 @@
+.countDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonCount {
+    color:#e7a430 ;
+    text-Decoration: none;
+    background-color: black;
+    border-radius: 18px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.buttonCount:hover{
+    color:  black;
+    background-color:#e7a430;
+}
+
+.countP {
+    padding-top: 1rem;
+}
+
+.buttonAdd {
+    color: black;
+    text-Decoration: none;
+    background-color:#e7a430;
+    border-radius: 18px;
+    padding:  0.5rem 2rem 0.5rem 2rem;
+    margin: 0.5rem;
+    transition: all 0.5s;
+}
+
+.buttonAdd:hover{
+    color: #e7a430;
+    background-color: black;
+    
+}
+
+@media screen and (max-width: 1200px) {
+    .buttonAdd {
+      display: block;
+    }
+
+    .countDiv {
+        display: flex;
+        flex-direction: column;
+    }
+  }

@@ -1,0 +1,13 @@
+.imgCart {
+    width: 3rem;
+}
+
+.cartLinks{
+    text-decoration: none;
+    color: white;
+
+}
+
+.cartItems{
+    margin: 1rem;
+}
