@@ -3,7 +3,7 @@ import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { database } from "../../services/firebase/config";
 import { getDoc, doc } from "firebase/firestore";
-import { getProduct } from "../../asyncmock";
+import Cargando from "../Cargando/Cargando";
 
 const ItemDetailContainer = () => {
     const [product, setProducto] = useState(null);
@@ -11,11 +11,6 @@ const ItemDetailContainer = () => {
     const [loading, setLoading] = useState(true);
 
     const { idItem } = useParams();
-
-    // useEffect(() => {
-    //    getProduct(idItem)
-    //         .then(res => setProducto(res))
-    //}, [idItem])
 
     useEffect(() => {
 
@@ -30,8 +25,13 @@ const ItemDetailContainer = () => {
             })
 
             .catch(error => console.log(error))
+            .finally(() => setLoading(false));
 
-    }, [idItem])
+    }, [idItem]);
+
+    if (loading) {
+        return (<Cargando/>)
+    }
 
     return (
         <div>

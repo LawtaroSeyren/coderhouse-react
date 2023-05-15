@@ -1,0 +1,52 @@
+
+.loading {
+    text-align: center;
+    border: 1px solid #c58518;
+    border-radius: 10px;
+    background-color: white;
+    padding: 3rem;
+    margin: 3rem;
+}
+
+.imgLoading{
+    max-width: 60%;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    color: #c58518;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+.errorLink {
+    display: block;
+    color: black;
+    text-Decoration: none;
+    background-color:#e7a430;
+    border-radius: 18px;
+    padding: 0.5rem;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.errorLink:hover{
+    color: #e7a430;
+    background-color: black;
+    
+}
+
+.divButton {
+    width: 50%;
+}

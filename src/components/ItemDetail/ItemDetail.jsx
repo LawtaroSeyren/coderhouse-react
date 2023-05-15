@@ -12,10 +12,10 @@ const ItemDetail = ({ id, nombre, precio, img, desc, stock, idCat}) => {
   const { addItem } = useContext(CartContext);
 
 
-  const handlerCount = (qty) => {
+  const handleCount = (qty) => {
     setCartItems(qty);
-    const item = { id, nombre, precio, idCat, img };
-    addItem(item, qty, img);
+    const item = { id, nombre, precio, idCat, img, desc, stock };
+    addItem(item, qty);
   }
 
   return (
@@ -38,7 +38,7 @@ const ItemDetail = ({ id, nombre, precio, img, desc, stock, idCat}) => {
                 <Link to={`/`} className="buttonContinue">Seguir comprando</Link>
                 <Link to="/cart" className="buttonFinish">Finalizar compra</Link>
               </div>) : (
-                <ItemCount inicial={1} stock={stock} onAdd={handlerCount} />
+                <ItemCount inicial={1} stock={stock} onAdd={handleCount} />
               )}
             </div>
           </div>

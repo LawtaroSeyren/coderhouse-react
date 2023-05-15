@@ -7,9 +7,8 @@ import emptyCar from '../../Images/cart.png'
 
 const Cart = () => {
 
-    const {cart, clearCart, totalItems} = useContext(CartContext);
+    const {cart, clearCart, totalItems, totalPrice} = useContext(CartContext);
 
-    const totalPrice = cart.reduce((total, product) => total + (product.item.precio * product.qty), 0 )
 
     if(totalItems === 0 ) {
         return (
@@ -25,16 +24,18 @@ const Cart = () => {
     } 
 
     return (
+        <>
         <div className="container">
             <div className='cartContainer'>
                 <div className="cartList">
-            {cart.map(product => <CartItem key={product.id} {...product} /> )}
+                {cart.map((product) => <CartItem key={product.id} {...product} /> )}
             </div>
             <h3>Total: U$S {totalPrice}</h3>
             <Link className="buttonCart" onClick={clearCart}>Vaciar carrito</Link>
             <Link className="checkOut" to="/checkout">Finalizar Compra</Link>
         </div>
         </div>
+        </>
     )
 
 }

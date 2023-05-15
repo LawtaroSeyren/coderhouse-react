@@ -1,0 +1,43 @@
+.checkOut{
+    color: black;
+    text-decoration: none;
+    background-color: #e7a430;
+    border-radius: 18px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    transition: all 0.5s;
+  }
+
+  .imgHat{
+    width: 50%;
+    margin: 1rem;
+  }
+  
+  .checkOut:hover {
+    color: #e7a430;
+    background-color: black;
+  }
+
+  .buttonCart {
+    color:#e7a430 ;
+    text-Decoration: none;
+    background-color: black;
+    border-radius: 18px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    margin: 1rem;
+    transition: all 0.5s;
+}
+
+.buttonCart:hover{
+    color:  black;
+    background-color:#e7a430;
+}
+
+.purchaseContainer {
+    text-align: center;
+    border: 1px solid #c58518;
+    border-radius: 10px;
+    margin: 3rem;
+    padding: 10px;
+    background-color: white;
+  }

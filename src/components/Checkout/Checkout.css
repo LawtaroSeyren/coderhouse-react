@@ -1,0 +1,83 @@
+.emptyCar{
+    max-width: 60%;
+}
+
+.cartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .cartForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .formGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 1px #e7a430;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus{
+    outline: none;
+    border: solid 1px;
+    transition: all 0.5s;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 1);
+  }
+  
+  .buttonSubmit {
+    display: block;
+    color: black;
+    text-Decoration: none;
+    background-color:#e7a430;
+    border-radius: 18px;
+    border: none;
+    padding: 0.5rem;
+    margin: 1rem;
+    transition: all 0.5s;
+  }
+  
+  .buttonSubmit:hover {
+    color: #e7a430;
+    background-color: black;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  

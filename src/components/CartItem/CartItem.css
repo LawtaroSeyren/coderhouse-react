@@ -3,7 +3,16 @@
     color: black;
 }
 
+.delete {
+    cursor: pointer;
+    display: block;
+    color: rgb(255, 72, 0);
+    padding: 1rem;
+}
 
+.delete:hover{
+    text-decoration:underline;
+}
 
 .cartItemImage{
     width: 15%;

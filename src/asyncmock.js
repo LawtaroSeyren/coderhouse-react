@@ -1,4 +1,4 @@
-const products = [
+/* const products = [
     {id: "1", nombre: "Sofa", precio: 280, stock: 10, img: "../imgProducts/sofa.jpg", idCat:"living", desc: "Sofá steampunk elegante con detalles metálicos envejecidos y cómodos cojines de plumas de alta calidad."},
     {id: "2", nombre: "Lámpara de piso", precio: 120, stock: 17, img: "../imgProducts/lampara.jpg", idCat:"living", desc: "Lámpara de piso steampunk elegante con base de metal y pantalla de vidrio ahumado de alta calidad. La iluminación suave y cálida que proporciona crea una atmósfera acogedora en cualquier espacio."},
     {id: "3", nombre: "Inodoro", precio: 315, stock: 7, img: "../imgProducts/inodoro.jpg", idCat:"bathroom", desc: "Inodoro steampunk sofisticado con detalles ornamentales intrincados. Diseñado para una experiencia única en el baño, este inodoro combina la elegancia del estilo victoriano con la funcionalidad moderna. Una pieza imprescindible."},
@@ -37,3 +37,5 @@ export const getProductsByCategory = (idCategory) => {
         },100)
     })
 }
+
+*/
