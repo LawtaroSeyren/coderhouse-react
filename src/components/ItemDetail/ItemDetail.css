@@ -81,3 +81,14 @@
     color:  black;
     background-color:#e7a430;
 }
+
+@media screen and (max-width: 1200px) {
+
+  .countDiv{
+    text-align: center;
+  }
+
+  .buttonContinue {
+    display: block;
+  }
+}
